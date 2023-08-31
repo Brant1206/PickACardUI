@@ -9,6 +9,11 @@ namespace PickACardUI
     class CardPicker
     {
         static Random random = new Random();
+        /// <summary>
+        /// 抽指定數量撲克牌回傳
+        /// </summary>
+        /// <param name="numberOfCaards">抽幾張牌</param>
+        /// <returns>抽取牌的字串</returns>
         public static string[] PickSomeCards(int numberOfCaards)
         {
             string[] pickedCards = new string[numberOfCaards];
